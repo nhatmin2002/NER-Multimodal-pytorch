@@ -57,7 +57,7 @@ if __name__ == '__main__':
     parser.add_argument("--train_batch_size", default=16, type=int, help="Batch size for training")
     parser.add_argument("--eval_batch_size", default=32, type=int, help="Batch size for evaluation")
     parser.add_argument("--optimizer", default="adam", type=str, help="Optimizer selected in the list: " + ", ".join(OPTIMIZER_LIST.keys()))
-    parser.add_argument("--learning_rate", default=0.19, type=float, help="The initial learning rate")
+    parser.add_argument("--learning_rate", default=0.0001, type=float, help="The initial learning rate")
     parser.add_argument("--num_train_epochs", default=5.0, type=float, help="Total number of training epochs to perform.")
     parser.add_argument("--slot_pad_label", default="[pad]", type=str, help="Pad token for slot label pad (to be ignore when calculate loss)")
     parser.add_argument("--ignore_index", default=0, type=int,

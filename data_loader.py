@@ -64,7 +64,7 @@ class TweetProcessor(object):
 
     @classmethod
     def get_labels(cls):
-        return ["[pad]", "[unk]", "O", "B-PER", "I-PER", "B-LOC", "I-LOC", "B-ORG", "I-ORG", "B-OTHER", "I-OTHER"]
+        return ["[pad]", "[unk]", "O", "B-LOC", "B-ORG", "I-LOC", "B-PER", "I-PER", "I-ORG", "B-MISC", "I-MISC"]
 
     @classmethod
     def get_label_vocab(cls):

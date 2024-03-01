@@ -43,7 +43,7 @@ if __name__ == '__main__':
     parser.add_argument("--max_word_len", default=30, type=int, help="Max word length")
 
     parser.add_argument("--word_vocab_size", default=23204, type=int, help="Maximum size of word vocabulary")
-    parser.add_argument("--char_vocab_size", default=102, type=int, help="Maximum size of character vocabulary")
+    parser.add_argument("--char_vocab_size", default=137, type=int, help="Maximum size of character vocabulary")
 
     parser.add_argument("--word_emb_dim", default=200, type=int, help="Word embedding size")
     parser.add_argument("--char_emb_dim", default=30, type=int, help="Character embedding size")

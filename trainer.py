@@ -162,7 +162,6 @@ class Trainer(object):
         logger.info("***** Eval results *****")
         for key in sorted(results.keys()):
             logger.info("  %s = %s", key, str(results[key]))
-                print(f"{key} = {results[key]}")
         
         print("\n" + report(out_label_list, preds_list))
         logger.info("\n" + report(out_label_list, preds_list))  # Get the report for each tag result

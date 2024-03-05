@@ -144,6 +144,7 @@ class Trainer(object):
         results = {
             "loss": eval_loss
         }
+        print(eval_loss)
 
         # Slot result
         slot_label_map = {i: label for i, label in enumerate(self.label_lst)}

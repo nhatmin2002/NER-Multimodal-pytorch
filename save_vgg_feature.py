@@ -120,7 +120,7 @@ if __name__ == "__main__":
 
     # Only load the images that is in train/dev/test
     img_id_lst = []
-    for text_filename in ['train', 'dev', 'test']:
+    for text_filename in ['train.txt', 'dev.txt', 'test.txt']:
         with open(os.path.join(args.data_dir, text_filename), 'r', encoding='utf-8') as f:
             for line in f:
                 if line.startswith("IMGID:"):

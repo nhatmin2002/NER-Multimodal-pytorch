@@ -158,6 +158,7 @@ class Trainer(object):
                     preds_list[i].append(slot_label_map[preds[i][j]])
 
         result = compute_metrics(out_label_list, preds_list)
+        print(result)
         results.update(result)
 
         logger.info("***** Eval results *****")

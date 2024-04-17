@@ -116,7 +116,7 @@ class Trainer(object):
         preds = None
         out_label_ids = None
 
-        for batch in tqdm(eval_dataloader, desc="Evaluating"):
+        for batch in tqdm(eval_dataloader, disable=True):
             self.model.eval()
             batch = tuple(t.to(self.device) for t in batch)
             with torch.no_grad():

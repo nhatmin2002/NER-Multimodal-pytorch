@@ -96,10 +96,13 @@ class Trainer(object):
 
     def evaluate(self, mode):
         if mode == 'test':
+            print(mode)
             dataset = self.test_dataset
         elif mode == 'dev':
+            print(mode)
             dataset = self.dev_dataset
         elif mode == 'train':
+            print(mode)
             dataset = self.train_dataset
         else:
             raise Exception("Only train, dev and test dataset available")
